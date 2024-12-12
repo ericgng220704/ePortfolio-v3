@@ -27,3 +27,7 @@ body {
 .flex-center {
   @apply flex justify-center items-center;
 }
+
+.bento-title {
+  @apply uppercase md:text-4xl text-2xl font-black;
+}

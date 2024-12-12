@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 import CTAButton from "./cta-button";
 
-const navItems = ["About", "Contact", "ditme"];
+const navItems = ["About", "Projects"];
 
 export default function NavBar() {
   const navContainerRef = useRef(null);
@@ -46,10 +46,13 @@ export default function NavBar() {
       className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
-        <nav className="flex size-full items-center justify-between px-52 ">
+        <nav className="flex size-full items-center justify-between px-48">
           {/* Logo and Product button */}
-          <div className="flex size-full items-center justify-between bg-white/20">
-            <img src="logo.jpg" alt="logo" className="w-10 rounded-full" />
+          <div className="flex size-full items-center justify-between bg-white/10 px-4 py-2 rounded-2xl">
+            <div className="flex items-center gap-4">
+              <img src="logo.jpg" alt="logo" className="w-10 rounded-full" />
+              <h3>Hi, I'm Eric</h3>
+            </div>
 
             {/* Navigation Links and Audio Button */}
             <div className="flex h-full items-center">
@@ -67,7 +70,7 @@ export default function NavBar() {
 
               <CTAButton
                 id="product-button"
-                title="Products"
+                title="Contact me"
                 rightIcon={<TiLocationArrow />}
                 containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
               />
